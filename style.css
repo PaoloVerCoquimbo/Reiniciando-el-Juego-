@@ -1,0 +1,144 @@
+/* Estilos generales: aplica a todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white; /* Texto blanco por defecto */
+}
+
+/* Fondo y alineación del body */
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen de fondo con transparencia */
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/* Contenedor principal del juego */
+.container {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* Posición del contenido dentro del contenedor */
+.container__contenido {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Zona de los textos y botones */
+.container__informaciones {
+    flex: 1;
+    padding: 3rem;
+}
+
+/* Botón general (Enviar o Nuevo juego) */
+.container__boton {
+    border-radius: 16px;
+    background: #1875E8; /* Azul brillante */
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 2rem;
+}
+
+/* Estilo cuando el botón está deshabilitado */
+.container__boton:disabled {
+    background: #898989; /* Gris */
+}
+
+/* Estilo para los párrafos */
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+/* Texto azul específico */
+.container__texto-azul {
+    color: #1875E8;
+}
+
+/* Cuadro de entrada del número */
+.container__input {
+    width: 100%;
+    height: 72px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Alineación de los botones */
+.container__botones {
+    display: flex;
+    gap: 2em;
+}
+
+/* Título principal */
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 72px;
+    padding-bottom: 3rem;
+}
+
+/* Fuente general para párrafos y botones */
+p,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo específico de los textos */
+.texto__parrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
+/* Botón cuando el usuario acierta */
+.correcto {
+    background-color: #28a745 !important; /* Verde éxito */
+    color: white;
+}
+
+/* Puedes usar este para diferenciar el botón deshabilitado */
+button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
